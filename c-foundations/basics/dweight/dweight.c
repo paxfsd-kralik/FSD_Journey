@@ -8,7 +8,7 @@ Author: Jindra Kralik
 
 int	main(void)
 {
-	int	height,	length,	width,	volume,	weight;
+	int	height,	length,	width,	volume;
 
 	printf("Enter the HEIGHT of the box: ");
 	scanf("%d", &height);
@@ -16,11 +16,10 @@ int	main(void)
 	scanf("%d", &length);
 	printf("Enter the WIDTH of the box: ");
 	scanf("%d", &width);
-	volume	=	height*length*width;
-	weight	=	(volume + 165)/166;
+	volume	=	height * length * width;
 
 	printf("Volume (in3): %d\n", volume);
-	printf("Dimensional weight (pounds) : %d\n", weight);
+	printf("Dimensional weight (pounds) : %d\n", (volume + 165)/166);
 
 	return 0;
 }
