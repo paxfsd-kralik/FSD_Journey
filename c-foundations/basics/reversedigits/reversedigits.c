@@ -29,7 +29,7 @@ int	main(void)
 	n1 = digit % 10;
 	a1 = digit / 10;
 	n2 = a1 % 10;
-	n3 = a1 	/ 10;
+	n3 = a1 / 10;
 
 	printf("The reversal is: %d%d%d\n", n1, n2, n3);
 
