@@ -21,6 +21,7 @@ int	main(void)
 
 	return 0;
 */
+/* 
 	int	digit, a1, n1, n2, n3;
 
 	printf("Enter a three digit number: ");
@@ -33,5 +34,20 @@ int	main(void)
 
 	printf("The reversal is: %d%d%d\n", n1, n2, n3);
 
+	return 0; 
+*/
+	int	n;
+
+	printf("Enter an integer number: ");
+	scanf("%d", &n);
+	printf("The reversed number is: ");
+
+	while (n > 0)
+	{
+		printf("%d", n % 10);
+		n /= 10;
+	}
+
+	printf("\n");
 	return 0;
 }
