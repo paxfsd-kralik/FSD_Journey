@@ -1,5 +1,5 @@
 /*
-Name: square2.c
+Name: square3.c
 Purpose: Prints a table of squares using an odd method
 Author: Jindra Kralik
 */
