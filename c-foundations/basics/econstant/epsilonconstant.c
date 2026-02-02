@@ -13,12 +13,10 @@ int	main(void)
 	double	term = 1.0f;
 	double	e = 1.0f;
 
-	i = 1;
+	printf("Enter a small number: ");
+    scanf("%lf", &epsilon);
 
-	printf("Enter number of terms: ");
-    scanf("%d", &n);
-
-	while (i <= n)
+	while (term > epsilon)
 	{
 		term = term / i;
 		e = e + term;
