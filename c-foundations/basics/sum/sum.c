@@ -8,7 +8,7 @@ Author: Jindra Kralik
 
 int	main(void)
 {
-	int n, sum;
+	long int n, sum;
 
 	printf("This program sums a set of integers.\n");
 	printf("Enter integers (0 to terminate): ");
@@ -17,9 +17,9 @@ int	main(void)
 	while (n != 0)
 	{
 		sum += n;
-		scanf("%d", &n);
+		scanf("%ld", &n);
 	}
 
-	printf("The sum is : %d\n", sum);
+	printf("The sum is : %ld\n", sum);
 	return 0;
 }
