@@ -17,7 +17,7 @@ int	main(void)
 
 	for (square = 1; i <= n; odd += 2)
 	{
-		printf("%10d%10d\n", i, square);
+		printf("%1zd%10d\n", i, square);
 		i++;
 		square += odd;
 	}
