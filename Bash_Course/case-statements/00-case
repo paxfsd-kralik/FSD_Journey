@@ -7,19 +7,18 @@ hello() {
 
 goodbye() {
 	local s=$1
-	echo "goodbye $1"
+	echo "goodbye $1!"
 }
 
 if (($# == 0)); then
 	echo 'name required!' >&2
+	exit 1
 fi
 
 for name in "$@"; do
-	if [[ $name == d* ]]; then
-		hello "$name"
-	elif [[ $name == b* ]]; then
-		hello "$name"
-	else
-		goodbye "$name"
-	fi
+	case "$name" in
+		b*)	hello "$name";;
+		d*)	hello "$name";;
+		*)	goodbye "$name";;
+	esac
 done

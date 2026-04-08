@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+s=$1
+
+case "$s" in
+	dave)	echo 'hi dave';;
+	buddy)	echo 'ohhh myyy g';;
+	pax)	echo 'here comes trouble!';;
+	*)	echo "who's that?!";;
+esac
