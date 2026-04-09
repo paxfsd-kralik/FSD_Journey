@@ -1,1 +1,16 @@
 #!/usr/bin/env bash
+
+array=(zero one two three)
+
+echo "@: "
+for item in "${array[@]}"; do
+	echo "item is: $item"
+done
+
+echo "*: "
+for item in "${array[*]}"; do
+	echo "item is: $item"
+done
+
+echo "Size of array: ${#array[@]}"
+echo "Size of element 3: ${#array[3]}"
